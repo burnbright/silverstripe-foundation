@@ -1,0 +1,127 @@
+.typography {
+  /* Highlighting for search results titles and content snippets. */
+  /*** Image formatting ***/
+  /*** LINK ICONS ***/
+  /*
+  a[href$=".pdf"],
+  a[href$=".PDF"],
+  .pdf {
+  	padding-left: 22px;
+  	background: url(../../../themes/ssexpress/images/icons/page_white_acrobat.png) no-repeat left 0;
+  }
+  a[href$=".doc"],
+  a[href$=".DOC"],
+  .doc {
+  	padding-left: 22px;
+  	background: url(../../../themes/ssexpress/images/icons/page_word.png) no-repeat left 0;
+  }
+  a[href$=".xls"],
+  a[href$=".XLS"],
+  .xls {
+  	padding-left: 22px;
+  	background: url(../../../themes/ssexpress/images/icons/page_excel.png) no-repeat left 0;
+  }
+  a[href$=".gz"],
+  a[href$=".GZ"],
+  a[href$=".gzip"],
+  a[href$=".GZIP"],
+  a[href$=".zip"],
+  a[href$=".ZIP"],
+  .archive {
+  	padding-left: 22px;
+  	background: url(../../../themes/ssexpress/images/icons/page_white_zip.png) no-repeat left 0;
+  }
+  a[href$=".exe"],
+  a[href$=".EXE"],
+  .application {
+  	padding-left: 22px;
+  	background: url(../../../themes/ssexpress/images/icons/application.png) no-repeat left 0;
+  }
+  a[href$="http://"],
+  .external {
+  	padding-right: 22px;		
+  }
+  */
+}
+.typography h1, .typography h2, .typography h3 {
+  clear: both;
+}
+.typography li {
+  list-style: inside;
+}
+.typography span.highlight {
+  background: yellow;
+}
+.typography a.external {
+  padding-right: 20px;
+}
+.typography a img {
+  border: none;
+}
+.typography blockquote {
+  border-left: 5px solid #EEEEEE;
+  margin: 0 0 18px;
+  padding: 0 0 0 15px;
+}
+.typography blockquote .blockquote-author {
+  margin-top: -18px;
+  color: #999999;
+  display: block;
+  line-height: 18px;
+  font-size: 100%;
+}
+.typography blockquote .blockquote-author:before {
+  content: "— ";
+}
+.typography .fileExt {
+  font-size: 0.8em;
+}
+.typography img.right {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+.typography img.left {
+  float: left;
+  margin: 0 18px 18px 0px;
+  background-color: red;
+}
+.typography img.leftAlone {
+  margin: 0 18px 18px 0;
+  float: none;
+  display: block;
+  clear: both;
+}
+.typography img.center {
+  display: block;
+  margin: 0 auto 18px auto;
+  clear: both;
+}
+.typography .captionImage {
+  width: 100%;
+}
+.typography .captionImage.left {
+  float: left;
+  margin: 0 18px 18px 0px;
+}
+.typography .captionImage.right {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+.typography .captionImage.leftAlone {
+  float: none;
+  margin: 0 18px 18px 0px;
+}
+.typography .captionImage.center {
+  margin: 0 auto 18px;
+}
+.typography .captionImage p {
+  clear: both;
+  margin: 8px 0;
+  color: #999;
+}
+.typography .captionImage img {
+  margin: 0 0 5px 0;
+}
+.typography time {
+  font-size: 0.9em;
+}

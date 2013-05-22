@@ -1,0 +1,141 @@
+.typography{
+	
+	h1,h2,h3{
+		clear: both; //prevent images from affecting headings
+	}
+
+	li{
+		list-style: inside;
+	}
+	/* Highlighting for search results titles and content snippets. */
+	span.highlight {
+		background: yellow;
+	}
+	a {
+		&.external {
+			padding-right: 20px;
+		}
+		img{
+			border:none;
+		}
+	}
+
+	blockquote {
+		border-left: 5px solid #EEEEEE;
+		margin: 0 0 18px;
+    	padding: 0 0 0 15px;
+		.blockquote-author {
+			margin-top: -18px;
+			color: #999999;
+		    display: block;
+		    line-height: 18px;
+		    font-size: 100%;
+		    &:before {
+	    		content: "— ";
+	    	}
+		}
+	}
+
+	.fileExt{
+		font-size:0.8em;
+	}
+	
+	
+	/*** Image formatting ***/	
+	
+	img{
+		&.right {
+			float:right;
+			margin: 0 0 18px 18px;
+		}
+		&.left {
+			float:left;
+			margin: 0 18px 18px 0px;
+			background-color: red;
+		}
+		&.leftAlone {
+			margin: 0 18px 18px 0;
+			float: none;
+			display: block;
+			clear: both;
+		}
+		&.center {
+			display:block;
+			margin: 0 auto 18px auto;
+			clear: both;
+		}
+	}
+	.captionImage {
+		width: 100%;
+		&.left {
+			float: left;
+			margin: 0 18px 18px 0px;			
+		}
+		&.right{
+			float:right;
+			margin: 0 0 18px 18px;
+		}
+		&.leftAlone{
+			float:none;
+			margin: 0 18px 18px 0px;
+		}
+		&.center{
+			margin: 0 auto 18px;
+		}
+		p {
+			clear: both;
+			margin: 8px 0;
+			color: #999;
+		}
+		img {
+			margin: 0 0 5px 0;
+		}
+	}
+
+	time{
+		font-size:0.9em;
+	}
+
+	/*** LINK ICONS ***/
+	/*
+	a[href$=".pdf"],
+	a[href$=".PDF"],
+	.pdf {
+		padding-left: 22px;
+		background: url(../../../themes/ssexpress/images/icons/page_white_acrobat.png) no-repeat left 0;
+	}
+	a[href$=".doc"],
+	a[href$=".DOC"],
+	.doc {
+		padding-left: 22px;
+		background: url(../../../themes/ssexpress/images/icons/page_word.png) no-repeat left 0;
+	}
+	a[href$=".xls"],
+	a[href$=".XLS"],
+	.xls {
+		padding-left: 22px;
+		background: url(../../../themes/ssexpress/images/icons/page_excel.png) no-repeat left 0;
+	}
+	a[href$=".gz"],
+	a[href$=".GZ"],
+	a[href$=".gzip"],
+	a[href$=".GZIP"],
+	a[href$=".zip"],
+	a[href$=".ZIP"],
+	.archive {
+		padding-left: 22px;
+		background: url(../../../themes/ssexpress/images/icons/page_white_zip.png) no-repeat left 0;
+	}
+	a[href$=".exe"],
+	a[href$=".EXE"],
+	.application {
+		padding-left: 22px;
+		background: url(../../../themes/ssexpress/images/icons/application.png) no-repeat left 0;
+	}
+	a[href$="http://"],
+	.external {
+		padding-right: 22px;		
+	}
+	*/
+
+}

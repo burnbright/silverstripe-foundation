@@ -1,0 +1,60 @@
+@import "foundation-variables";
+@import "foundation";
+@import "reset";
+@import "utility";
+@import "typography";
+@import "forms";
+@import "fontawesome";
+
+@import "compass/css3/font-face";
+
+@include font-face('PT Sans',
+	font-files(
+		'PT-Sans/PTC55F-webfont.woff', woff,
+		'PT-Sans/PTC55F-webfont.ttf', ttf,
+		'PT-Sans/PTC55F-webfont.svg', svg),
+    'PT-Sans/PTC55F-webfont.eot', 400);
+
+@include font-face('PT Sans',
+	font-files(
+		'PT-Sans/PTC75F-webfont.woff', woff,
+		'PT-Sans/PTC75F-webfont.ttf', ttf,
+		'PT-Sans/PTC75F-webfont.svg', svg),
+    'PT-Sans/PTC75F-webfont.eot', 600);
+
+@include font-face('Open Sans',
+	font-files(
+		'open-sans/OpenSans-Regular-webfont.woff', woff,
+		'open-sans/OpenSans-Regular-webfont.ttf', ttf,
+		'open-sans/OpenSans-Regular-webfont.svg', svg),
+    'open-sans/OpenSans-Regular-webfont.eot', 400);
+
+@include font-face('Open Sans',
+	font-files(
+		'open-sans/OpenSans-Bold-webfont.woff', woff,
+		'open-sans/OpenSans-Bold-webfont.ttf', ttf,
+		'open-sans/OpenSans-Bold-webfont.svg', svg),
+    'open-sans/OpenSans-Bold-webfont.eot', 600);
+
+
+.contain-to-grid .top-bar{
+  margin-bottom: 0; /* prevent fat top bar on mobile */
+}
+
+div.content{
+	padding: 2em 0;
+}
+
+.orbit-container{
+	.slide{
+
+		img {
+		     margin: 0 auto;
+		     position: relative;
+		     display: block;
+		}
+		.orbit-caption{
+			text-align: center;
+		}
+	}
+}

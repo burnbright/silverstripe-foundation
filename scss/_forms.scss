@@ -1,0 +1,65 @@
+.typography{
+	
+	form{
+		max-width: 800px;
+	}
+
+	.field{
+		margin-bottom:1em;
+		clear:both;
+		&:after{
+			clear: both;
+		}
+	}
+
+	.optionset{
+		ul{
+			margin-bottom: 0;
+		}
+		li{
+			padding-left: 1em;
+			list-style: none;
+			input{
+				display:inline;
+				margin: 0;
+				padding: 0;
+				margin-right: 0.5em;
+			}
+			label{
+				display:inline;
+			}
+		}
+		.middleColumn{
+			clear:both;
+		}
+	}
+
+	.checkbox{
+		input{
+			margin-right: 0.5em;
+		}
+		label.right{
+			float: none !important;
+			display: inline;
+			text-align: left;
+		}
+	}
+	
+	.text, .textarea{
+		&.required{
+			@include form-error-color();
+		}
+	}
+
+	label.required{
+	    @include form-error-message;
+	 }
+
+	.button, button, input.action{
+		@include button($button-med, $primary-color, true);
+	    &.large  { @include button-size($button-lrg); }
+	    &.small  { @include button-size($button-sml); }
+	    &.tiny   { @include button-size($button-tny); }
+	}
+
+}

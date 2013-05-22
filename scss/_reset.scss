@@ -1,0 +1,47 @@
+/* Set box-sizing globally to handle padding and border widths */
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+html,
+body { font-size: $base-font-size; }
+
+/* Default body styles */
+body {
+  background: $body-bg;
+  color: $body-font-color;
+  padding: 0;
+  margin: 0;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-style: $body-font-style;
+  line-height: 1;
+  position: relative;
+}
+
+/* Override outline from normalize, we don't like it */
+a:focus { outline: none; }
+
+/* Grid Defaults to get images and embeds to work properly */
+img,
+object,
+embed { max-width: 100%; height: auto; }
+
+object,
+embed { height: 100%; }
+img { -ms-interpolation-mode: bicubic; }
+
+/* Get rid of gap under images by making them display: inline-block; by default */
+img { display: inline-block; }
+
+/* Make sure textarea takes on height automatically, and only resizes vertically by default */
+textarea {
+  height: auto;
+  min-height: 50px;
+  resize: vertical;
+}
+
+/* Make select elements 100% width by default */
+select { width: 100%; }
