@@ -1,9 +1,11 @@
+<% require ThemedCSS(normalize) %>
 <% require ThemedCSS(styles) %>
 <% require javascript(themes/foundation/javascript/vendor/custom.modernizr.js) %>
 <% require javascript(themes/foundation/javascript/foundation.min.js) %>
 <% require javascript(themes/foundation/javascript/initfoundation.js) %>
 <!doctype html>
-<html lang="en">
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
