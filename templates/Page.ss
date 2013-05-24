@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div id="header" class="sticky contain-to-grid fixed">
+			<div id="header" class="contain-to-grid">
 				<% include TopBar %>
 			</div>
 			<div id="layout">
