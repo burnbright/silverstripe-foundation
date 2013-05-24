@@ -6,6 +6,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
 		<% base_tag %>
 		<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> - $SiteConfig.Title</title>
 		$MetaTags(false)
