@@ -4,8 +4,10 @@
 <% require javascript(themes/foundation/javascript/foundation.min.js) %>
 <% require javascript(themes/foundation/javascript/initfoundation.js) %>
 <!doctype html>
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
@@ -16,7 +18,7 @@
 	<body>
 		<div class="container">
 			<div id="header" class="contain-to-grid">
-				<% include TopBar %>
+				<% include Header %>
 			</div>
 			<div id="layout">
 				$Layout		

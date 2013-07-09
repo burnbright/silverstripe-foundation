@@ -1,12 +1,14 @@
 <nav class="top-bar">
 	<ul class="title-area">
-		<li class="name">
-			<h1><a href="home">$SiteConfig.Title</a></h1>
-		</li>
+		
+			<li class="name">
+				<% if SiteTitle %><h1><a href="home">$SiteTitle</a></h1><% end_if %>
+			</li>
+		
 		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 	</ul>
 	<section class="top-bar-section">
-		<ul class="right">
+		<ul <% if MenuPos %>class="$MenuPos"<% end_if %>>
 			<% loop Menu(1) %>
 				<% if Children %>
 					<li class="has-dropdown"><a href="$Link">$MenuTitle</a>
