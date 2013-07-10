@@ -5439,6 +5439,9 @@ html[xmlns] .clearfix {
 .typography .optionset .middleColumn {
   clear: both;
 }
+.typography .dropdown .middleColumn {
+  clear: both;
+}
 .typography .checkbox input {
   margin-right: 0.5em;
 }
@@ -5514,6 +5517,9 @@ html[xmlns] .clearfix {
   padding-bottom: 0.5em;
   padding-left: 0.875em;
   font-size: 0.6875em;
+}
+.typography .button.expand, .typography button.expand, .typography input.action.expand {
+  width: 100%;
 }
 
 /*  Font Awesome

@@ -34,6 +34,12 @@
 		}
 	}
 
+	.dropdown{
+		.middleColumn{
+			clear:both;
+		}
+	}
+
 	.checkbox{
 		input{
 			margin-right: 0.5em;
@@ -60,6 +66,9 @@
 	    &.large  { @include button-size($button-lrg); }
 	    &.small  { @include button-size($button-sml); }
 	    &.tiny   { @include button-size($button-tny); }
+	    &.expand{
+	    	width: 100%;
+	    }
 	}
 
 }

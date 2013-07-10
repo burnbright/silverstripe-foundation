@@ -2,6 +2,7 @@
 <% require ThemedCSS(styles) %>
 <% require javascript(themes/foundation/javascript/vendor/custom.modernizr.js) %>
 <% require javascript(themes/foundation/javascript/foundation.min.js) %>
+<% require javascript(themes/foundation/javascript/foundation.forms.js) %>
 <% require javascript(themes/foundation/javascript/initfoundation.js) %>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
