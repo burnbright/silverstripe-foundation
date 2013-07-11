@@ -3,10 +3,22 @@
 	h1,h2,h3{
 		clear: both; //prevent images from affecting headings
 	}
+	
+	ul,ol{
+		margin: 1 1.5em;
+		margin-top: 0.5em;
+		margin-bottom: 0.8em;
+	}
 
 	li{
-		list-style: inside;
+		list-style-position: inside;
+		margin: 0.8em 0;
 	}
+
+	ol{list-style-type: decimal;}
+	ol ol{list-style-type: lower-alpha;}
+	ol ol ol{list-style-type: lower-roman;}
+
 	/* Highlighting for search results titles and content snippets. */
 	span.highlight {
 		background: yellow;

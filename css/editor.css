@@ -46,8 +46,23 @@
 .typography h1, .typography h2, .typography h3 {
   clear: both;
 }
+.typography ul, .typography ol {
+  margin: 1 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
 .typography li {
-  list-style: inside;
+  list-style-position: inside;
+  margin: 0.8em 0;
+}
+.typography ol {
+  list-style-type: decimal;
+}
+.typography ol ol {
+  list-style-type: lower-alpha;
+}
+.typography ol ol ol {
+  list-style-type: lower-roman;
 }
 .typography span.highlight {
   background: yellow;
