@@ -6,8 +6,6 @@
 # type: compass watch
 # For more info: http://compass-style.org/help/tutorials/command-line/
 
-require "zurb-foundation"
-
 project_type = :stand_alone
 # Set this to the root of your project when deployed:
 css_dir = "css"
