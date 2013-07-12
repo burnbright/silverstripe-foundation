@@ -1,8 +1,9 @@
-<% require ThemedCSS(normalize) %>
 <% require ThemedCSS(styles) %>
+<% require javascript(themes/foundation/javascript/vendor/jquery.js) %>
 <% require javascript(themes/foundation/javascript/vendor/custom.modernizr.js) %>
-<% require javascript(themes/foundation/javascript/foundation.min.js) %>
-<% require javascript(themes/foundation/javascript/foundation.forms.js) %>
+<% require javascript(themes/foundation/javascript/foundation/foundation.js) %>
+<% require javascript(themes/foundation/javascript/foundation/foundation.topbar.js) %>
+<% require javascript(themes/foundation/javascript/foundation/foundation.forms.js) %>
 <% require javascript(themes/foundation/javascript/initfoundation.js) %>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -18,9 +19,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div id="header" class="contain-to-grid">
-				<% include Header %>
-			</div>
+			<% include Header %>
 			<div id="layout">
 				$Layout		
 			</div>

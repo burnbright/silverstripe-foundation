@@ -62,13 +62,7 @@
 	 }
 
 	.button, button, input.action{
-		@include button($button-med, $primary-color, true);
-	    &.large  { @include button-size($button-lrg); }
-	    &.small  { @include button-size($button-sml); }
-	    &.tiny   { @include button-size($button-tny); }
-	    &.expand{
-	    	width: 100%;
-	    }
+		@extend a.button;
 	}
 
 }

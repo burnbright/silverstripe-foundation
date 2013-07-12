@@ -2,13 +2,17 @@
 
 ## Requirements
 
- * Compass http://compass-style.org/
- * SASS http://sass-lang.com/
- * Zurb-Foundation Compass Gem http://foundation.zurb.com/docs/compass.php
+ * Compass http://compass-style.org
+ * SASS http://sass-lang.com
  * SilverStripe 3.0
 
-## Future enhancements
+## Usage
 
- * Social links
- * Twitter feed
- * Radioactive buttons http://zurb.com/playground/radioactive-buttons
+You could use the theme, as is, for prototyping purposes.
+On the other hand, you may want to use it as a starting point
+for creating a website design.
+
+### In mysite
+
+Copy scss/styles.scss to your mysite/scss folder, and update paths.
+Overwrite any files you like, eg scss/foundation/_variables.scss

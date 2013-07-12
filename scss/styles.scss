@@ -1,45 +1,27 @@
-@import "foundation-variables";
-@import "foundation";
-@import "reset";
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+//resets
+@import "normalize";
+
+// This includes all of the foundation global elements that are needed to work with any of the other files.
+@import "foundation/variables";
+
+//customised variables (from foundation/_variables.scss)
+$body-font-family: "Open Sans", sans-serif;
+$header-font-family: "PT Sans", Arial, sans-serif;
+$global-radius: 5px;
+$button-radius: $global-radius;
+$topbar-breakpoint: emCalc(768px);
+
+// Foundation Components
+@import "foundation/components";
+
 @import "utility";
 @import "typography";
 @import "forms";
+@import "fonts";
 @import "fontawesome";
-
-@import "compass/css3/font-face";
-
-@include font-face('PT Sans',
-	font-files(
-		'PT-Sans/PTC55F-webfont.woff', woff,
-		'PT-Sans/PTC55F-webfont.ttf', ttf,
-		'PT-Sans/PTC55F-webfont.svg', svg),
-    'PT-Sans/PTC55F-webfont.eot', 400);
-
-@include font-face('PT Sans',
-	font-files(
-		'PT-Sans/PTC75F-webfont.woff', woff,
-		'PT-Sans/PTC75F-webfont.ttf', ttf,
-		'PT-Sans/PTC75F-webfont.svg', svg),
-    'PT-Sans/PTC75F-webfont.eot', 600);
-
-@include font-face('Open Sans',
-	font-files(
-		'open-sans/OpenSans-Regular-webfont.woff', woff,
-		'open-sans/OpenSans-Regular-webfont.ttf', ttf,
-		'open-sans/OpenSans-Regular-webfont.svg', svg),
-    'open-sans/OpenSans-Regular-webfont.eot', 400);
-
-@include font-face('Open Sans',
-	font-files(
-		'open-sans/OpenSans-Bold-webfont.woff', woff,
-		'open-sans/OpenSans-Bold-webfont.ttf', ttf,
-		'open-sans/OpenSans-Bold-webfont.svg', svg),
-    'open-sans/OpenSans-Bold-webfont.eot', 600);
-
-
-.contain-to-grid .top-bar{
-  margin-bottom: 0; /* prevent fat top bar on mobile */
-}
 
 div.content{
 	padding: 2em 0;
@@ -47,7 +29,6 @@ div.content{
 
 .orbit-container{
 	.slide{
-
 		img {
 		     margin: 0 auto;
 		     position: relative;
