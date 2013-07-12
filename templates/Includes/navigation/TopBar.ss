@@ -1,23 +1,20 @@
-<nav class="top-bar">
+<nav class="top-bar" data-options="scrolltop: false">
 	<ul class="title-area">
-		
-			<li class="name">
-				<% if SiteTitle %><h1><a href="home">$SiteTitle</a></h1><% end_if %>
-			</li>
-		
+		<li class="name hide-for-medium-up">
+			<% if SiteConfig.Title %><h1><a href="home">$SiteConfig.Title</a></h1><% end_if %>
+		</li>
 		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 	</ul>
 	<section class="top-bar-section">
-		<ul <% if MenuPos %>class="$MenuPos"<% end_if %>>
+		<ul <% if MenuPos %>class="$MenuPos"<% else %>class="left"<% end_if %>>
 			<% loop Menu(1) %>
 				<% if Children %>
-					<li class="has-dropdown"><a href="$Link">$MenuTitle</a>
+					<li class="has-dropdown $LinkingMode"><a href="$Link">$MenuTitle</a>
 					
 					<ul class="dropdown">
-						<li class="parentlink"><a href="$Link">$MenuTitle</a></li>
-						<li class="divider"></li>
+
 						<% loop Children %>
-							<li><a href="$Link">$MenuTitle</a></li>
+							<li class="$LinkingMode"><a href="$Link">$MenuTitle</a></li>
 						<% end_loop %>
 					</ul>
 				</li>
